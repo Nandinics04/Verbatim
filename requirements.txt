@@ -1,3 +1,6 @@
 ipykernel
 pydantic
 rank-bm25
+langchain_huggingface
+numpy
+sentence-transformers
