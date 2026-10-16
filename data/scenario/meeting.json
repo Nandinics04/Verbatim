@@ -1,0 +1,47 @@
+{
+    "meeting_id": "2026-03-12-refund-review",
+    "turns":[
+        {
+            "turn_id": "t1",
+            "speaker": "Nandini",
+            "start_ms": 192000,
+            "end_ms": 208000,
+            "text": "An enterprise ticket with code R-14 can be refunded up to $500 without a manager"
+        },
+        {
+            "turn_id":"t2",
+            "speaker": "Omar",
+            "start_ms": 210000,
+            "end_ms": 222000,
+            "text": "Finance agrees with exception"
+        },
+        {
+            "turn_id":"t3",
+            "speaker": "Mark",
+            "start_ms": 224000,
+            "end_ms": 232000,
+            "text": "Who owns the follow-up?"
+        },
+        {
+            "turn_id":"t4",
+            "speaker": "Nandini",
+            "start_ms": 234000,
+            "end_ms": 246000,
+            "text": "Sam is the owner of the follow-up"
+        }
+    ],
+    "records":[
+        {
+            "kind": "decision",
+            "text": "An enterprise ticket with code R-14 can be refunded up to $500 without a manager",
+            "owner": "Nandini",
+            "turn_ids": ["t1"]
+        },
+        {
+            "kind":"action",
+            "text": "Sam is the owner of the follow-up",
+            "owner": "Sam",
+            "turn_ids": ["t4"]
+        }
+    ]
+}
