@@ -49,7 +49,3 @@ notebook/          step-by-step walkthrough
 pyproject.toml     dependencies managed by uv
 .env               Hugging Face token, not committed
 ```
-
-## Still ahead
-
-The citation check still sees every chunk, not only the reranked set. A structured summary still has to be written, with a test that an action's words appear in the turns it cites. After that: recall@5, citation accuracy, abstention, and latency for BM25 against hybrid search plus rerank; one AMI meeting and a small EnterpriseRAG-Bench slice; live audio only after those numbers exist. LangSmith tracing stays optional, through environment variables.
