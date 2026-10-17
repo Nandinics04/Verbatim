@@ -7,3 +7,5 @@ sentence-transformers
 langgraph 
 langchain-openai
 faster-whisper
+pyannote-audio
+dotenv
