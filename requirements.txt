@@ -4,3 +4,5 @@ rank-bm25
 langchain_huggingface
 numpy
 sentence-transformers
+langgraph 
+langchain-openai
