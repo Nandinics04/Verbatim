@@ -11,3 +11,12 @@ All three unanswerable questions fail on both systems: a $400 refund on ticket Z
 I keep hybrid search plus rerank for questions the corpus can answer, because it improved the rank of the first gold chunk on the R-14 question. It did not improve recall@5. Neither system abstains once an unanswerable question shares ordinary words with the documents. That is the failure this fixture still has.
 
 Speech, measured separately: faster-whisper `base` on `Recording.wav` has word error rate 20% against the hand-written transcript. pyannote labels every turn `SPEAKER_00` because the clip is one voice.
+
+## ES2004a and one Redwood meeting
+
+ES2004a’s human action says the group will prepare for the functional design meeting and discuss components. `prepare` and `components` are not in the transcript, so that sentence is not a record.
+
+EnterpriseRAG-Bench question `qst_0004` has one gold Fireflies document. On that document plus 200 others, BM25 document recall@5 is 1.0, and all five hits are sections of that same transcript. The summary section states the recommendation. The other four hits are the topic list, the attendee list, the question about entitlement delay, and a Redwood speaker’s own plan. The GCP speaker’s recommendation is not in the top 5. A long meeting can fill every slot with its own sections, which the four-line Northwind meeting cannot show.
+## First transcript
+
+`Recording.wav` is 48 kHz. In 5-second pieces, resampled to 16 kHz, faster-whisper `base` on CPU returns the first text in 1.39 seconds. A fixed window splits the R-14 sentence across the first two pieces and packs the finance line, the follow-up question, and Sam’s line into the third. The pause rule from the full-file transcript is what keeps those as separate turns.
