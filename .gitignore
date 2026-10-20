@@ -9,3 +9,6 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+# Downloaded corpora. The Northwind scenario files stay tracked.
+data/ami/

@@ -9,3 +9,4 @@ langchain-openai
 faster-whisper
 pyannote-audio
 dotenv
+datasets
